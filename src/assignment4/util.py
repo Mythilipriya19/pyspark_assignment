@@ -2,7 +2,7 @@ from pyspark.sql import SparkSession
 from pyspark.sql.functions import explode, explode_outer, posexplode, current_date, year, month, day
 from pyspark.sql.types import StructType, ArrayType, StringType, IntegerType, StructField, MapType
 from pyspark_assignment.src.assignment1.util import spark
-json_path = r'C:\Users\Lakshmidevi\OneDrive\Documents\ass4.json'
+json_path = r'C:\Users\mythi\OneDrive\Documents\ass4.json'
 schema = StructType([
     StructField("id", IntegerType(), True),
     StructField("properties", StructType([
